@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px;
+}
+
+.todo-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+form,
+.todo-wrapper {
+  width: 200px;
+}
+
+label {
+  display: grid;
+  grid-template-columns: 20px 1fr 50px;
+  gap: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  accent-color: lightcoral;
+}
+
+button[id="delete"] {
+  min-width: 50px;
+  height: 20px;
+  border: 0;
+  border-radius: 2px;
+  background: lightcoral;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+}
+
+.checked {
+  text-decoration: line-through;
+}
